@@ -1,29 +1,19 @@
 body {
-  color:#392052;
+  color:#493c4b;
   font-size: 20px;
   text-align: left;
-  font-family: 'Roboto';
+  font-family: "Kode Mono", monospace;
   background-color:  #b4acc5;
-  }
-ul {
-  list-style-type: none;
-  text-align: center;
-  display: grid;
 }
-.titlePage {
-  display: flex;
+h1 {
+  font-family: 'Pokemon Solid', sans-serif;
+  color: #eee6ee;
 }
-nav {
-  flex:1; 
-  text-align: right;
-  padding: 8px;
-  transition: 0.2s ease;;
-  }
-button {
+.btn-primary{
   display: grid;
   padding: 15px 25px;
   font-size: 16px;
-  background-color: #393952;
+  background-color: #493c4b;
   color: #eee6ee;
   border: none;
   border-radius: 5px;
@@ -33,53 +23,50 @@ button {
   transition: background-color 0.3s ease;
   margin: 5px;
 }
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-            
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* this is used to center the modal */
-  display: grid;
+
+.page-container {
+  margin-top: 60px;   
+}
+
+.modal-header {
   text-align: center;
 }
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
+
+.modal-body {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
-.modal-close {
-  float: right;
-  
-  border: 0;
-  background: none;
-  color: rgb(64, 0, 160);
-  text-decoration: underline;
+
+.modal-content {
+  background-color:#d4d1c5
 }
-.modal h1 {
-  margin-top: 0;
+
+.navbar {
+  background-color: #452b57;
+  font-family: 'Roboto';
 }
-.modal p {
-  margin-bottom: 0;
+
+.list-group {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  flex-flow: row wrap;
 }
-#modal-container {
-  display: none;
+
+.list-group-item button {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  width: 250px;
+  padding-left: 10px;
 }
-#modal-container.is-visible {
-  display: block;
-}
+
+.list-group-item {
+  list-style-type: none;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+} 
